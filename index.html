@@ -1,34 +1,64 @@
-:root{
-  --green:#2E8B57;
-  --accent:#ff9800;
-  --muted:#f3f3f3;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patitas Felices 🐾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="logo" class="logo">
+      <div>
+        <h1>Patitas Felices</h1>
+        <p class="tagline">Dando amor y hogar a quienes más lo necesitan</p>
+      </div>
+    </div>
+  </header>
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--muted);color:#222;line-height:1.5}
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Ayúdanos a darles un mejor hogar</h2>
+        <p>Con tu aporte damos alimento, atención médica y refugio a muchos peluditos en situación de calle.</p>
 
-.site-header{background:linear-gradient(135deg,#4CAF50,#2E7D32);color:#fff;padding:18px;border-bottom:4px solid var(--accent)}
-.header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:12px}
-.logo{width:60px}
+        <a class="btn donate" href="https://www.paypal.com/donate?business=TU_CORREO_PAYPAL&currency_code=USD" target="_blank">💚 Donar con PayPal</a>
+      </div>
+    </section>
 
-.hero{padding:40px 20px;text-align:center}
-.hero h2{color:var(--green);font-size:28px;margin-bottom:10px}
-.hero p{font-size:18px;margin-bottom:20px}
+    <section class="gallery">
+      <h2>Nuestros rescatados</h2>
+      <div class="grid">
+        <img src="https://placedog.net/400/300?id=1" alt="perrito feliz">
+        <img src="https://placekitten.com/400/300" alt="gatito feliz">
+        <img src="https://placedog.net/400/300?id=2" alt="perrito adoptado">
+        <img src="https://placekitten.com/401/300" alt="gatito rescatado">
+      </div>
+    </section>
 
-.btn{display:inline-block;padding:12px 20px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
-.btn:hover{background:#e68900}
-.btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
+    <section class="about">
+      <h2>Nuestra misión</h2>
+      <p>Rescatar, proteger y encontrar hogares amorosos para perros y gatos en situación de abandono.</p>
+    </section>
 
-.gallery{margin:40px auto;text-align:center}
-.gallery h2{color:var(--green);margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
-.grid img{width:100%;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.1)}
+    <section class="contact">
+      <h2>Contáctanos</h2>
+      <p>¿Quieres ayudar o tienes dudas? Escríbenos.</p>
 
-.about{padding:20px;text-align:center}
-.about h2{color:var(--green);margin-bottom:10px}
+      <a class="btn outline" href="mailto:TUCORREO@GMAIL.COM">📩 Enviar correo</a>
 
-.contact{padding:20px;text-align:center}
-.contact-form{max-width:500px;margin:20px auto;display:flex;flex-direction:column;gap:10px}
-.contact-form input,.contact-form textarea{padding:10px;border-radius:6px;border:1px solid #ddd}
+      <form action="https://formspree.io/f/TU_ID" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+        <button class="btn" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
 
-footer{margin-top:40px;padding:20px;background:#eee;color:#555;text-align:center}
+  <footer>
+    <p>© 2025 Patitas Felices — Gracias por apoyar a los peluditos ❤️</p>
+  </footer>
+</body>
+</html>
