@@ -1,55 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patitas Felices 🐾</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      font-size: 24px;
-    }
-    main {
-      padding: 30px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin-top: 20px;
-      background: #ff9800;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: #e68900;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    💚 Bienvenidos a Patitas Felices 🐶🐱
-  </header>
+Actualizo diseño de la página principal
+:root{
+  --green:#2E8B57;
+  --accent:#ff9800;
+  --muted:#f3f3f3;
+}
 
-  <main>
-    <h2>Ayúdanos a darles un mejor hogar a los perritos</h2>
-    <p>Con tu aporte podemos dar alimento, refugio y salud a muchos peluditos.</p>
-    
-    <a class="btn" href="https://www.gofundme.com/" target="_blank">Donar Ahora</a>
-  </main>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--muted);color:#222;line-height:1.5}
 
-  <footer style="margin-top: 40px; font-size: 14px; color: #555;">
-    © 2025 Patitas Felices - Todos los derechos reservados.
-  </footer>
-</body>
-</html>
+.site-header{background:linear-gradient(135deg,#4CAF50,#2E7D32);color:#fff;padding:18px;border-bottom:4px solid var(--accent)}
+.header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.logo{width:60px}
+
+.hero{padding:40px 20px;text-align:center}
+.hero h2{color:var(--green);font-size:28px;margin-bottom:10px}
+.hero p{font-size:18px;margin-bottom:20px}
+
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn:hover{background:#e68900}
+.btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
+
+.gallery{margin:40px auto;text-align:center}
+.gallery h2{color:var(--green);margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.grid img{width:100%;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.1)}
+
+.about{padding:20px;text-align:center}
+.about h2{color:var(--green);margin-bottom:10px}
+
+.contact{padding:20px;text-align:center}
+.contact-form{max-width:500px;margin:20px auto;display:flex;flex-direction:column;gap:10px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:6px;border:1px solid #ddd}
+
+footer{margin-top:40px;padding:20px;background:#eee;color:#555;text-align:center}
